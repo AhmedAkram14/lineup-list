@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" > -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/to-do.css">
+    <link rel="icon" href="css/whitelogo.png" type="image/icon type">
+
+    <title>Lineup Todo list</title>
+
+</head>
+<body>
+    
+    <!-- <nav class="text-center container rounded" style="display: none;">
+        ORGANIZE YOUR DAYS !
+    </nav> -->
+    <section class="sec container" >
+        <div class="logo">
+            <img src="css/logo.png" alt="">
+        <h1 class="first-head">Lineup</h1>
+        </div>
+        <img src="css/unnamed.png" alt="" width="200px" >
+        <form action="" class="mt-5">
+            <div>
+                <input type="text" class="form-control mb-3 bg-transparent " placeholder="Tell Us What Is Your Name ?" >
+                <div class="select">
+                <p>Choose Your Gender : </p>
+                <select name="" id="" >
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+                <p class="text-center"><button type="button" class="btn">Done!</button></p>
+            </div>
+    
+        </form>
+    </section>
+    <div class = "overlay-popup  bg-white" style="display: none;">
+        <div class="popup">
+            <div class="img">
+            <img src="css/e47122e8-5981-486e-bca9-b0335348c12c.webp" width="250px" alt="">
+        </div>
+        <h3>Hello <span class="user"></span></h3>
+        <h4 class="orgnaized-text">Get Orgnaized Your Life</h4>
+        <p>lineup is a simple and effective to-do list and task manager app which helps you manage time.</p>
+        <button type="button" class="btn">Get Started</button>
+
+        <div class="log">
+            <img src="css/logo.png" alt="">
+        <h4>Lineup</h4>
+        </div>
+        </div>
+    </div>
+    <div class = "error-overlay-popup" style="display: none;">
+        <div class="error-popup">
+        <p>Please write Your Name First !</p>
+        </div>
+    </div>
+    <div class="to-do-page container row"   style="display: none;">
+        <div class="side-bar col-lg-3">
+            <div class="actions text-center">
+            <h1 class="text-center"><img src="css/logo.png" alt="">Lineup</h1>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="text" placeholder="Search All">
+                </div>
+                <div class="resetandtrash">
+                    <div class="sure" style="display: none;">
+                    <h6>Are You Sure ?</h6>
+                    <button class="yes-btn">Yes</button>
+                    <button class="no-btn">No</button>
+                    </div>
+                    <div class="reset" style="display: flex;">
+                        <i class="fa-solid fa-eraser"></i>
+                        <p>Reset</p>
+                    </div>
+                    <div class="trash-all" style="display: flex;">
+                        <i class="fa-solid fa-trash-arrow-up"></i>
+                         <p>Clear trash</p>
+                    </div>
+                
+                </div>
+            </div>
+                <div class="lists " >
+                    <ul>
+                        <div class="list-head">
+                            <i class="fa-solid fa-clipboard-list fa-2x"></i>
+                            <h2>LISTS</h2>
+                        </div>
+                        <li class="all" style="background: black; color: var(--mainColor);">All <span class="all-span">0</span></li> 
+                        <li class="in-progress">In Progress <span class="progress-span">0</span></li>
+                        <li class="completed">Completed <span class="completed-span">0</span></li>
+                        <li class="favourite">Favourite <span class="favourite-span">0</span></li>
+                        <li class="trash">Trash <span class="trash-span">0</span></li>
+                    </ul>
+                </div>
+            </div>
+        <div class="tasks col-lg-8">
+            <div class="title">
+                <div class="iconn" style="display: none;">
+                    <i class="fa-solid fa-bars nav-icon"></i>
+                 </div>
+                 <div class="info">
+                     <div class="name">
+                         
+                         <h2>Hello Ahmed</h2>
+                         <p>Today you have 0 task</p>
+                        </div>
+                        <div class="male">
+                            <img src="css/male.png" width="100px" alt="">
+                        </div>
+                </div>
+                <div class="added">
+
+                </div>
+
+            </div>
+            <button class="new-task"><i class="fa-solid fa-plus fa-1x"></i></button>
+            <div class="write-new">
+                <div class="task-box">
+                    <input type="text" class="form-control mb-2 bg-transparent " placeholder="Write New Todo..." aria-label="First name" >
+                    <div class="iconns">
+                       <button class="fav"> <i class="fa-solid fa-star"></i> </button>
+                       <button class="add"> <i class="fa-solid fa-plus"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
